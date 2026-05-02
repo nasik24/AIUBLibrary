@@ -97,8 +97,14 @@ public class Window extends JFrame implements ActionListener {
         removeBtn.addActionListener(this);
         updateBtn.addActionListener(this);
         getBtn.addActionListener(this);             
-
-        add(leftPanel, BorderLayout.WEST);
+		
+		// Scroll Button 
+		
+        JScrollPane leftScroll = new JScrollPane(leftPanel);
+	leftScroll.setPreferredSize(new Dimension(440, 600));
+	leftScroll.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+	leftScroll.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
+	add(leftScroll, BorderLayout.WEST);
 
         // ===== OUTPUT AREA =====
         outputArea = new JTextArea();
