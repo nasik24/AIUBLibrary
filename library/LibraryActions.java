@@ -13,6 +13,5 @@ public abstract class LibraryActions {
 
     public abstract String updateBook(int id, String newTitle, String newAuthor);
 
-    public abstract String getBook(int id);
 
 }
