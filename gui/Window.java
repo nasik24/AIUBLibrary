@@ -17,7 +17,7 @@ public class Window extends JFrame implements ActionListener {
     JButton searchBtn;
     JButton removeBtn;
     JButton updateBtn;
-    JButton getBtn;        
+           
 
     BookList bookList = new BookList();
 
@@ -77,7 +77,7 @@ public class Window extends JFrame implements ActionListener {
         searchBtn = Buttons.makeButton("Search");
         removeBtn = Buttons.makeButton("Remove");
         updateBtn = Buttons.makeButton("Update");
-        getBtn    = Buttons.makeButton("Get");       
+               
 
         leftPanel.add(addBtn);
         leftPanel.add(Box.createRigidArea(new Dimension(0, 10)));
@@ -88,15 +88,14 @@ public class Window extends JFrame implements ActionListener {
         leftPanel.add(removeBtn);
         leftPanel.add(Box.createRigidArea(new Dimension(0, 10)));
         leftPanel.add(updateBtn);
-        leftPanel.add(Box.createRigidArea(new Dimension(0, 10)));
-        leftPanel.add(getBtn);                       
+                               
 
         addBtn.addActionListener(this);
         viewBtn.addActionListener(this);
         searchBtn.addActionListener(this);
         removeBtn.addActionListener(this);
         updateBtn.addActionListener(this);
-        getBtn.addActionListener(this);             
+                     
 		
 		// Scroll Button 
 		
@@ -159,9 +158,6 @@ public class Window extends JFrame implements ActionListener {
         }
         else if (cmd.equals("Update")) {
             outputArea.setText(bookList.updateBook(id, title, author));
-        }
-        else if (cmd.equals("Get")) {               
-            outputArea.setText(bookList.getBook(id));
         }
     }
 }
