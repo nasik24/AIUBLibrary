@@ -1,6 +1,6 @@
 # 📚 AIUB Library Management System
 
-> A simple **Java Swing** desktop application for managing library books.
+A simple **Java Swing** desktop application for managing library books.
 
 ---
 
@@ -13,7 +13,7 @@
 ✔️ Remove Book  
 ✔️ Save & Load Data  
 
----
+
 
 ## 🛠️ Technologies Used
 
