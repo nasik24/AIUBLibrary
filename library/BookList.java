@@ -81,19 +81,6 @@ public class BookList extends LibraryActions {
         return "Book not found.";
     }
 
-    // ===== GET =====
-    @Override
-    public String getBook(int id) {
-        for (int i = 0; i < count; i++) {
-            if (books[i].getId() == id) {
-                return "Book Details:\n\n" +
-                       "ID: " + books[i].getId() + "\n" +
-                       "Title: " + books[i].getTitle() + "\n" +
-                       "Author: " + books[i].getAuthor();
-            }
-        }
-        return "Book not found.";
-    }
 
     // ===== SAVE TO FILE =====
     public void saveToFile() {
